@@ -1,0 +1,116 @@
+{
+    "_version": "1.7.0",
+    "sap.app": {
+        "id": "zApayDemo",
+        "type": "application",
+        "i18n": "i18n/i18n.properties",
+        "applicationVersion": {
+            "version": "1.0.0"
+        },
+        "title": "{{appTitle}}",
+        "description": "{{appDescription}}",
+        "sourceTemplate": {
+            "id": "ui5template.basicSAPUI5ApplicationProject",
+            "version": "1.40.12"
+        }
+    },
+    "sap.ui": {
+        "technology": "UI5",
+        "icons": {
+            "icon": "",
+            "favIcon": "",
+            "phone": "",
+            "phone@2": "",
+            "tablet": "",
+            "tablet@2": ""
+        },
+        "deviceTypes": {
+            "desktop": true,
+            "tablet": true,
+            "phone": true
+        },
+        "supportedThemes": [
+            "sap_hcb",
+            "sap_belize"
+        ]
+    },
+    "sap.ui5": {
+        "rootView": {
+            "viewName": "zApayDemo.view.View1",
+            "type": "XML"
+        },
+        "dependencies": {
+            "minUI5Version": "1.52.13",
+            "libs": {
+                "sap.ui.core": {},
+                "sap.m": {},
+                "sap.ui.layout": {},
+                "sap.ushell": {},
+                "sap.collaboration": {},
+                "sap.ui.comp": {},
+                "sap.uxap": {}
+            }
+        },
+        "contentDensities": {
+            "compact": true,
+            "cozy": true
+        },
+        "models": {
+            "i18n": {
+                "type": "sap.ui.model.resource.ResourceModel",
+                "settings": {
+                    "bundleName": "zApayDemo.i18n.i18n"
+                }
+            },
+            "1Day": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/1Day.json",
+                "preload": false
+            },
+            "5Day": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/5Day.json",
+                "preload": false
+            },
+            "1Month": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/1Month.json",
+                "preload": false
+            },
+            "6Month": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/6Month.json",
+                "preload": false
+            },
+            "1Year": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/1Year.json",
+                "preload": false
+            },
+            "YTD": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/YTD.json",
+                "preload": false
+            },
+            "All": {
+                "type": "sap.ui.model.json.JSONModel",
+                "settings": {},
+                "uri": "model/All.json",
+                "preload": false
+            }
+        },
+        "resources": {
+            "css": [
+                {
+                    "uri": "css/style.css"
+                }
+            ]
+        }
+    }
+}

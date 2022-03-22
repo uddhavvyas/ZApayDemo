@@ -1,0 +1,117 @@
+/*.ToolBarCls.sapMIBar.sapMTB.sapMTB-Auto-CTX.sapMTBInactive.sapMTBNewFlex {
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    height: 3rem;
+    background: #000000e3 !important;
+    border-bottom: 1px solid #cccccc;
+}
+
+.sapMLabel {
+    color: #eff4f9;
+    font-size: 1.3rem;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: normal;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: text;
+    padding-right: 50rem;
+    overflow: visible;
+}*/
+.DeskList.sapMList {
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 843px;
+    padding: 0;
+    margin-right: auto;
+}
+.MobList.sapMList {
+    position: relative;
+    box-sizing: border-box;
+    margin-top: 400px;
+    padding: 0;
+}
+.HeaderMob.sapMFC {
+    outline: none;
+    position: relative;
+    width: 10rem;
+    height: 3.875rem;
+    display: inline-block;
+}
+.HeaderMob2.sapMFC{
+    outline: none;
+    position: relative;
+    height: 3.875rem;
+    display: inline-block;
+    width: 8rem;
+    margin-left: 10px;
+}
+.sapMObjectAttributeDiv .sapMText, .sapMObjectAttributeDiv .sapMObjectAttributeTitle, .sapMObjectAttributeDiv .sapMObjectAttributeColon, .sapMObjectAttributeDiv .sapMObjectAttributeText {
+    font-size: 0.99rem;
+    color: #000000;
+    margin-top: 21px;
+    margin-left: 116px;
+}
+#__xmlview0--idVizFrame {
+    margin-left: 30px;
+    position: absolute;
+}
+.sapMGTHdrContent {
+    height: 2rem;
+    margin-top: 0.625rem;
+    margin-left: 0.94rem;
+    margin-right: 0.94rem;
+}
+.sapMGT.OneByOne {
+    width: 14rem;
+    height: 9rem;
+}
+.sapMNCValueScr {
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    text-align: left;
+}
+.sapMTileCntFtrTxt {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 1.1875rem;
+    bottom: 0.625rem;
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+    line-height: 1.1875rem;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 0.875rem;
+}
+.sapMPanelContent {
+    padding: 1rem 0rem 0rem 0.5rem;
+    box-sizing: border-box;
+    overflow: auto;
+    white-space: normal;
+}
+.sapMFCSbh {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 20.5rem;
+    line-height: 1.55rem;
+    font-size: 1.5rem;
+    color: #666666;
+}
+.sapMFCCTxt .sapMText {
+    font-size: 0.9rem;
+    color: #333333;
+}

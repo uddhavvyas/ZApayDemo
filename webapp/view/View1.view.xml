@@ -1,0 +1,185 @@
+<mvc:View controllerName="zApayDemo.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:viz="sap.viz.ui5.controls"
+	xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds" xmlns:layout="sap.ui.layout" xmlns:viz.data="sap.viz.ui5.data">
+	<App>
+		<pages>
+			<Page title="APayCenter Dashboard" enableScrolling="true">
+				<content>
+					<Panel id="idDeskPanel" visible="false">
+						<HBox>
+							<HeaderContainer id="container1">
+								<FeedContent contentText="Total Number of Invoices" subheader="3,153"/>
+								<FeedContent contentText="Total Invoice Value" subheader="$28.3m"/>
+							</HeaderContainer>
+							<HBox class="sapUiSmallMarginTop">
+								<Button text="1 Day" class="sapUiSmallMarginEnd sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+								<Button text="5 Days" class="sapUiSmallMarginEnd sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+								<Button text="1 Month" class="sapUiSmallMarginEnd sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+								<Button text="6 Month" class="sapUiSmallMarginEnd sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+								<Button text="1 Year" class="sapUiSmallMarginEnd sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+								<Button text="YTD" class="sapUiSmallMarginEnd sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+								<Button id="Allbtn" text="All" class="sapUiSmallMarginTop" type="Transparent" press="onPressMenuBtn"/>
+							</HBox>
+						</HBox>
+					</Panel>
+					<Panel id="idMobPanel" visible="false">
+						<l:Grid defaultSpan="XL4 L4 M4 S12">
+							<VBox>
+								<HeaderContainer id="containerMob">
+									<FeedContent contentText="Total Number of Invoices" subheader="3,153" class="HeaderMob"/>
+									<FeedContent contentText="Total Invoice Value" subheader="$28.3m" class="HeaderMob2"/>
+								</HeaderContainer>
+								<VBox>
+									<HBox>
+										<MenuButton icon="sap-icon://filter" buttonMode="Regular" class="sapUiTinyMarginBegin sapUiTinyMarginTop">
+											<menu>
+												<Menu itemSelected="onMenuAction">
+													<MenuItem text="1 Day" press="onPressMenuBtn"/>
+													<MenuItem text="5 Days" press="onPressMenuBtn"/>
+													<MenuItem text="1 Month" press="onPressMenuBtn"/>
+													<MenuItem text="6 Month" press="onPressMenuBtn"/>
+													<MenuItem text="YTD" press="onPressMenuBtn"/>
+													<MenuItem text="All" press="onPressMenuBtn"/>
+												</Menu>
+											</menu>
+										</MenuButton>
+										<ObjectAttribute title="Selected" id="objMob" text="" visible="false"></ObjectAttribute>
+									</HBox>
+								</VBox>
+							</VBox>
+						</l:Grid>
+					</Panel>
+					<HBox visible="false" id="idHboxDesk" width="100%">
+						<GenericTile class="sapUiLargeMarginBegin sapUiTinyMarginTop" header="# Invoices / Day">
+							<tileContent>
+								<TileContent footer="Target 1200" footerColor="Good" id="tcId1">
+									<content>
+										<NumericContent id="numId1"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Paid on Time">
+							<tileContent>
+								<TileContent footer="Target 90%" footerColor="Error" id="tcId2">
+									<content>
+										<NumericContent id="numId2"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Invoice Processing Cycle">
+							<tileContent>
+								<TileContent footer="Target 7d" footerColor="Good" id="tcId3">
+									<content>
+										<NumericContent id="numId3"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Invoice Exception">
+							<tileContent>
+								<TileContent footer="Target 10%" footerColor="Error" id="tcId4">
+									<content>
+										<NumericContent id="numId4"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+						<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Early Payment Discount">
+							<tileContent>
+								<TileContent footer="Target 92%" footerColor="Error" id="tcId5">
+									<content>
+										<NumericContent id="numId5"/>
+									</content>
+								</TileContent>
+							</tileContent>
+						</GenericTile>
+					</HBox>
+					<VBox visible="false" id="idVboxMob">
+						<l:Grid defaultSpan="XL4 L4 M4 S12">
+							<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="# Invoices / Day">
+								<tileContent>
+									<TileContent footer="Target 1200" footerColor="Good">
+										<content>
+											<NumericContent id="numId6"/>
+										</content>
+									</TileContent>
+								</tileContent>
+							</GenericTile>
+							<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Paid on Time">
+								<tileContent>
+									<TileContent footer="Target 90%" footerColor="Error">
+										<content>
+											<NumericContent id="numId7"/>
+										</content>
+									</TileContent>
+								</tileContent>
+							</GenericTile>
+							<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Invoice Processing Cycle">
+								<tileContent>
+									<TileContent footer="Target 7d" footerColor="Good">
+										<content>
+											<NumericContent id="numId8"/>
+										</content>
+									</TileContent>
+								</tileContent>
+							</GenericTile>
+							<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Invoice Exception">
+								<tileContent>
+									<TileContent footer="Target 10%" footerColor="Error">
+										<content>
+											<NumericContent id="numId9"/>
+										</content>
+									</TileContent>
+								</tileContent>
+							</GenericTile>
+							<GenericTile class="sapUiSmallMarginBegin sapUiTinyMarginTop" header="Early Payment Discount">
+								<tileContent>
+									<TileContent footer="Target 92%" footerColor="Error">
+										<content>
+											<NumericContent id="numId10"/>
+										</content>
+									</TileContent>
+								</tileContent>
+							</GenericTile>
+						</l:Grid>
+					</VBox>
+					<viz:Popover id="idPopOver" visible="true"></viz:Popover>
+					<viz:VizFrame id="idVizFrame" uiConfig="{applicationSet:'fiori'}" height="380px" width="800px" vizType="combination"
+						vizProperties="{title :{text:'Invoices Posted Per Month'}}">
+						<viz:dataset>
+							<viz.data:FlattenedDataset data="{/RawData}">
+								<viz.data:dimensions>
+									<viz.data:DimensionDefinition name="Month" value="{Month}"/>
+								</viz.data:dimensions>
+								<viz.data:measures>
+									<viz.data:MeasureDefinition name="Lost" value="{Lost}"/>
+									<viz.data:MeasureDefinition name="Cash Discount" value="{CashDiscount}"/>
+									<viz.data:MeasureDefinition name="Revenue" value="{Revenue}"/>
+								</viz.data:measures>
+							</viz.data:FlattenedDataset>
+						</viz:dataset>
+						<viz:feeds>
+							<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Lost"/>
+							<viz.feeds:FeedItem uid="valueAxis" type="Measure" values="Cash Discount"/>
+							<viz.feeds:FeedItem uid="categoryAxis" type="Dimension" values="Month"/>
+						</viz:feeds>
+					</viz:VizFrame>
+					<List id="ProductList" items="{/TabData}" class="DeskList" visible="false" width="30%" headerText="Invoice Exception" growing="true"
+						growingThreshold="4" growingTriggerText="Show All">
+						<items>
+							<StandardListItem title="{label}" info="{value}"/>
+						</items>
+					</List>
+					<List id="ProductListMob" visible="false" class="MobList" items="{/TabData}" headerText="Invoice Exception" growing="true"
+						growingThreshold="4" growingTriggerText="Show All">
+						<items>
+							<StandardListItem title="{label}" info="{value}"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,80 @@
+{	"RawData":[
+		{
+			"Month":"Feb 2019",
+			"Lost":500,
+			"CashDiscount":480
+		},
+		{	
+			"Month":"Mar 2019",
+			"Lost":480,
+			"CashDiscount":420
+		},
+		{	
+			"Month":"April 2019",
+			"Lost":420,
+			"CashDiscount":350
+		},
+		{	
+			"Month":"May 2019",
+			"Lost":350,
+			"CashDiscount":300
+		},
+		{	
+			"Month":"June 2019",
+			"Lost":300,
+			"CashDiscount":240
+		},
+		{	
+			"Month":"July 2019",
+			"Lost":240,
+			"CashDiscount":190
+		},
+		{	
+			"Month":"Aug 2019",
+			"Lost":190,
+			"CashDiscount":140
+		},
+		{	
+			"Month":"Sep 2019",
+			"Lost":200,
+			"CashDiscount":190
+		},
+		{	
+			"Month":"Oct 2019",
+			"Lost":350,
+			"CashDiscount":300
+		},
+		{	
+			"Month":"Nov 2019",
+			"Lost":400,
+			"CashDiscount":350
+		}
+	
+		],
+		"TabData" : [
+				{
+					"label" : "Payment block close to due date",
+					"value" : "-14%"
+				},
+				{
+					"label" : "Invoices without purchase order",
+					"value" : "35%"
+				},
+				{
+					"label" : "Short payment terms",
+					"value" : "-8%"
+				},
+				{
+					"label" : "Posted after due date",
+					"value" : "2%"
+				},
+				{
+					"label" : "",
+					"value" : ""
+				},
+				{
+					"label" : "",
+					"value" : ""
+				}
+				]
+}
